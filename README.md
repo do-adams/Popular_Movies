@@ -28,7 +28,7 @@ MyTheMovieDbApiKey=<"INSERT_YOUR_API_KEY_HERE">
 
 Of course, you will need your own API key, which you can obtain for free [here](https://www.themoviedb.org/documentation/api?language=en).
 
-
+Alongside the API key, this project also makes use of the [OkHTTP](https://github.com/square/okhttp), [Picasso](https://github.com/square/picasso), [Gson](https://github.com/google/gson) and [Android DbInspector](https://github.com/infinum/android_dbinspector) libraries.
 
 
 
