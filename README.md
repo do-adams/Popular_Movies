@@ -3,8 +3,8 @@ An Android experience for browsing the most current popular movies.
 
 ![Popular Movies](/Popular Movies.png?raw=true)
 
-Have trouble keeping up with the lastest and greatest of cinema? Don't worry, Popular Movies is for you. You're just one tap away from
-a movie theather fanatic's dream. 
+Having trouble keeping up with the lastest and greatest of cinema? Don't worry, Popular Movies is for you. You're just one tap away from
+a movie theater fanatic's dream. 
 
 ![Popular Movies Tablet Layout](/Popular Movies Tablet.png?raw=true)
 
