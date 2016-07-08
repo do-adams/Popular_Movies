@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="settings_menu_title">Settings</string>
+    <string name="favorites_menu_title">Favorites</string>
+    <string name="list_preference">Sort</string>
+    <string name="list_preference_dialog">Sort Movies by</string>
+    <string name="sorting_preference_key">SORTING ORDER</string>
+    <string name="sorting_value_popular">Most Popular</string>
+    <string name="sorting_value_highest_rated">Highest Rated</string>
+
+</resources>
