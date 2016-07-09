@@ -50,7 +50,7 @@ public class FavoritesActivity extends AppCompatActivity {
         CupboardSQLiteOpenHelper dbHelper = new CupboardSQLiteOpenHelper(FavoritesActivity.this);
         mDb = dbHelper.getReadableDatabase();
 
-        //This query should be done off of the main thread
+        //TODO: This query should be moved off of the main thread
         Cursor cursor = cupboard().withDatabase(mDb).query(Movie.class).getCursor();
 
         if (cursor != null) {
