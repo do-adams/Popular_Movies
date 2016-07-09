@@ -22,7 +22,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.damian.popularmovies.R;
-import com.damian.popularmovies.activities.MainActivity;
 import com.damian.popularmovies.activities.MainFragment;
 import com.damian.popularmovies.data.Movie;
 import com.damian.popularmovies.data.Review;
@@ -83,18 +82,9 @@ public class DetailsFragment extends Fragment {
 
         Movie movie = null;
 
-        //if DetailFragment has been called from an Intent with movie data
-        if (mActivityContext.getIntent().hasExtra(Movie.MOVIE_KEY)) {
-            Intent intent = mActivityContext.getIntent();
-            if (intent != null && intent.hasExtra(Movie.MOVIE_KEY))
-                movie = intent.getParcelableExtra(Movie.MOVIE_KEY);
-        }
-        //if DetailFragment has been called from a Fragment Manager (tablet layout)
-        else if (MainActivity.isTwoPane()) {
-            Bundle bundle = getArguments();
-            if (bundle != null)
-                movie = bundle.getParcelable(Movie.MOVIE_KEY);
-        }
+        Bundle bundle = getArguments();
+        if (bundle != null)
+            movie = bundle.getParcelable(Movie.MOVIE_KEY);
 
         if (movie != null)
             rootView = createFragmentView(rootView, movie);
@@ -142,13 +132,6 @@ public class DetailsFragment extends Fragment {
         }
 
         return rootView;
-    }
-
-    @Override
-    public void onDestroyView() {
-        if (mDb != null && mDb.isOpen()) //close the database
-            mDb.close();
-        super.onDestroyView();
     }
 
     /**
@@ -326,5 +309,12 @@ public class DetailsFragment extends Fragment {
         } else {
             Log.d(TAG, "Movie reviews = null");
         }
+    }
+
+    @Override
+    public void onDestroyView() {
+        if (mDb != null && mDb.isOpen()) //close the database
+            mDb.close();
+        super.onDestroyView();
     }
 }
