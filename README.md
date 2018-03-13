@@ -1,12 +1,12 @@
 # Popular Movies
 An Android experience for browsing the most current popular movies.
 
-![Popular Movies](/Popular Movies.png?raw=true)
+![Popular Movies](Popular_Movies.png?raw=true)
 
 Having trouble keeping up with the lastest and greatest of cinema? Don't worry, Popular Movies is for you. You're just one tap away from
 the movie theater. 
 
-![Popular Movies Tablet Layout](/Popular Movies Tablet.png?raw=true)
+![Popular Movies Tablet Layout](Popular_Movies_Tablet.png?raw=true)
 
 I built this application on my own in July 2016 to satisfy the requirements for completing the [Udacity](https://www.udacity.com/) course, 
 [Developing Android Apps](https://www.udacity.com/course/developing-android-apps--ud853) and loved every minute of it. Along the way,
